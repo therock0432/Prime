@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>//Prime Number
+using namespace std;
+int main()
+{
+    long long int n;
+    cin>>n;
+    while(n<=1)
+    cout<<"Not Prime";
+    if(n==2)
+    cout<<"Prime";
+    else if(n!=2 && n%2!=0)
+    {
+        for(long long int i=3;i<sqrt(n);i++)
+    if(n%i==0)
+    cout<<"Not Prime";
+    cout<<"Prime";
+        
+    }
+    else
+    cout<<"Not Prime";
+return 0;
+    
+}
